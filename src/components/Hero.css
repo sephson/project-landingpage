@@ -1,0 +1,103 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero-container {
+  /* background: url("./images/img-7.jpg"); */
+  /* center center/cover norepeat */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  text-align: center;
+  /* max-width: 50rem; */
+}
+
+.hero-btns {
+  margin-top: 2rem;
+}
+
+.hero-container > h1 {
+  color: #fff;
+  font-size: 4.25rem;
+  margin-top: -5.25rem;
+  text-align: center;
+  max-width: 35rem
+}
+
+.hero-container > p {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.hero-btns .btn {
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    color: #fff;
+    font-size: 4.25rem;
+    margin-top: -3.25rem;
+    text-align: center;
+    max-width: 50rem;
+  }
+
+  .hero-container > p {
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .hero-btns {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    color: #fff;
+    font-size: 3.25rem;
+    margin-top: -3.25rem;
+    text-align: center;
+    max-width: 50rem;
+  }
+
+  .hero-container > p {
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+
+  .hero-btns {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    display: block;
+  }
+}
+@media screen and (max-width: 520px) {
+  .hero-btns {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    display: block;
+  }
+}
